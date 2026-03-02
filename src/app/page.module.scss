@@ -1,0 +1,132 @@
+.hero {
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
+    max-height: calc(100dvh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 1. 最初と最後を同じ色（#F0CACA）にするのがポイント */
+    background: linear-gradient(90deg,
+            #F0CACA,
+            #FFFFFF,
+            #CADEF0,
+            #F0CACA);
+
+    /* 2. 背景を横に長く引き延ばす */
+    background-size: 300% 100%;
+
+    /* 3. alternateを消して、linear（一定速度）にする */
+    animation: bg-scroll 15s linear infinite;
+
+    .heroContent {
+        text-align: center;
+        padding: 24px;
+        margin: 0;
+
+        .heroImage {
+            width: 200px;
+            height: 200px;
+            border: 6px solid #E60033;
+            border-radius: 50%;
+            margin-bottom: 32px;
+            object-fit: cover;
+        }
+
+        .heroText {
+            padding: 0;
+            margin: 0;
+            font-size: clamp(32px, 8vw, 60px);
+            font-weight: 900;
+            line-height: 1.2;
+        }
+    }
+}
+
+@keyframes bg-scroll {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        /* 右から左へ流れるように見せる */
+        background-position: 150% 0%;
+    }
+}
+
+.mainContent {
+    padding: 0;
+    margin: 0;
+
+    .subText {
+        width: fit-content;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 32px;
+        font-size: 40px;
+        font-weight: 900;
+        border-bottom: 4px solid #E60033;
+    }
+
+    .about {
+        background-color: #FFFFFF;
+        padding: 80px 60px;
+        text-align: center;
+
+        .textBox {
+            padding: 40px;
+            background-color: #FFF;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+            border-radius: 32px;
+
+            .aboutText {
+                text-align: start;
+                padding: 0;
+                margin: 0;
+                font-size: 40px;
+            }
+        }
+
+    }
+
+    .certification {
+        background-color: #F7F7F7;
+        padding: 80px 60px;
+        text-align: center;
+
+        .certificationContent {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+            gap: 32px;
+        }
+
+    }
+
+    .skills {
+        padding: 80px 60px;
+        text-align: center;
+
+        .skillContent {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+            gap: 32px;
+        }
+    }
+
+    .works {
+        background-color: #F7F7F7;
+        padding: 80px 24px;
+        text-align: center;
+
+        .worksContent {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+            gap: 32px;
+        }
+    }
+}
