@@ -4,6 +4,7 @@ import LinkBox from "@/src/components/linkbox/page";
 
 export default function Footer() {
     return (
+        <>
         <footer id="links" className={Style.footer}>
             <h1 className={Style.title}>Link</h1>
             <div className={Style.linkContainer}>
@@ -13,5 +14,9 @@ export default function Footer() {
                 <LinkBox name="YouTube" handle="@wizamari1138" iconName="youtube" url="https://www.youtube.com/@wizamari1138" />
             </div>
         </footer>
+        <div className={Style.copyright}>
+            <p className={Style.copyrightText}>© 2026 Wizamari All rights reserved.</p>
+        </div>
+        </>
     )
 }

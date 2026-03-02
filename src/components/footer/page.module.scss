@@ -24,3 +24,17 @@
     padding: 0;
     gap: 40px;
 }
+
+.copyright {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+
+    .copyrightText {
+        padding: 16px 0;
+        margin: 0;
+    }
+}
