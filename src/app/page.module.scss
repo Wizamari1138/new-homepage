@@ -120,6 +120,10 @@
             gap: 32px;
         }
 
+        @media (max-width: 768px) {
+            padding: 40px 20px;
+        }
+
     }
 
     .skills {
