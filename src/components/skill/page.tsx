@@ -31,7 +31,7 @@ type Props = {
 }
 
 export default function Skill({name, iconName}: Props) {
-  const icon = iconMap[iconName]; // 例としてUnityのアイコンを使用
+  const icon = iconMap[iconName]; 
   return (
     <>
       <div className={Style.skillBox}>

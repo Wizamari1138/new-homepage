@@ -63,7 +63,9 @@ export default function Home() {
         <div id="works" className={Style.works}>
           <h2 className={Style.subText}>Works</h2>
           <div className={Style.worksContent}>
-            <Work title="wizamari1138" language="Next.js/TypeScript" image="wizamari1138"/>
+            <Work title="ポートフォリオサイト" language="Next.js/TypeScript" image="wizamari1138" url="https://wizamari1138.vercel.app/"/>
+            <Work title="サボりの達人" language="Unity/C#" image="the_master_of_slacking" url="https://unityroom.com/games/the-master-of-slacking"/>
+            <Work title="ボルケーノガーディアン" language="Unity/C#" image="volcano_gardian" url="https://wizamari1138.github.io/volcano-guardian/"/>
           </div>
         </div>
       </div>
