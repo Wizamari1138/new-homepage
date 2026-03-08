@@ -68,7 +68,7 @@
         padding: 0;
         margin: 0 auto;
         margin-bottom: 32px;
-        font-size: 40px;
+        font-size: clamp(24px, 6vw, 40px);
         font-weight: 900;
         border-bottom: 4px solid #E60033;
     }
